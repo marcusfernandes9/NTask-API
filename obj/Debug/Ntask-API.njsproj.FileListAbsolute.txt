@@ -1,0 +1,3 @@
+C:\Users\marcus.fernandes\Documents\Ebooks\construindo-apis-rest-com-nodejs\ntask-api\obj\Debug\Ntask-API.njsprojAssemblyReference.cache
+C:\Users\marcus.fernandes\Documents\Ebooks\construindo-apis-rest-com-nodejs\ntask-api\obj\Debug\Ntask-API.njsproj.CoreCompileInputs.cache
+C:\Users\marcus.fernandes\Documents\Ebooks\construindo-apis-rest-com-nodejs\ntask-api\bin\Microsoft.NodejsTools.WebRole.dll
