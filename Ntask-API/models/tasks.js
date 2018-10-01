@@ -13,7 +13,7 @@ module.exports = (sequelize, DataType) => {
             }
         },
         done: {
-            type: DataType.BOLLEAN,
+            type: DataType.BOOLEAN,
             allowNull: false,
             defaultValue: false
         }
