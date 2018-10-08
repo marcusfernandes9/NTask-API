@@ -3,8 +3,8 @@
 
     app.route("/user")
         .all(app.auth.authenticate())
-        // "/users/1": Consulta um usuario
-        .get("/users/:id", (req, res) => {
+        // Consulta um usuario
+        .get((req, res) => {
             Users.findById(req.user.id, {
                 attributes: ["id", "name", "email"]
             })
@@ -13,15 +13,15 @@
                     res.status(412).json({ msg: error.message });
                 });
         })
-        // "/users/1": Exlcui um usuario
-        .delete("/users/:id", (req, res) => {
+        // Exlcui um usuario
+        .delete((req, res) => {
             Users.destroy({ where: { id: req.user.id } })
                 .then(result => res.sendStatus(204))
                 .catch(error => {
                     res.status(412).json({ msg: error.message });
                 });
         });
-    // "/users/1": Insere um usuario
+    // Insere um usuario
     app.post("/users", (req, res) => {
         Users.create(req.body)
             .then(result => res.json(result))

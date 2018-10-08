@@ -11,7 +11,7 @@
 
             Users.findOne({ where: { email: email } })
                 .then(user => {
-                    if (Users.isPassword(user.password, password) {
+                    if (Users.isPassword(user.password, password)) {
                         const payload = { id: user.id };
                         res.json({
                             token: jwt.encode(payload, cfg.jwtSecret)
@@ -26,4 +26,4 @@
             res.sendStatus(401);
         }
     });
-}
+};
