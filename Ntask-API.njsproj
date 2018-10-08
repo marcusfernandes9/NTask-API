@@ -30,6 +30,9 @@
     <Folder Include="Ntask-API\routes\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ntask-API\auth.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Ntask-API\db.js">
       <SubType>Code</SubType>
     </Compile>
@@ -43,6 +46,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Ntask-API\models\users.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ntask-API\routes\users.js">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
